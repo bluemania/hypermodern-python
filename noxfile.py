@@ -129,4 +129,5 @@ def docs(session: Session) -> None:
     """Build the documentation."""
     session.install(".")
     install_with_constraints(session, "sphinx", "sphinx-autodoc-typehints")
+    session.run("rm", "-rf", "docs/_build")
     session.run("sphinx-build", "docs", "docs/_build", *session.posargs)
