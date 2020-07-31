@@ -1,3 +1,7 @@
 # (generated with --quick)
 
-__version__: str
+from typing import Any
+
+PackageNotFoundError: Any
+__version__: Any
+version: Any
