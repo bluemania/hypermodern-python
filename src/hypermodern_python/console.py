@@ -1,4 +1,4 @@
-# src/hypermodern-python/console.py
+"""Command-line interface."""
 import textwrap
 
 import click
