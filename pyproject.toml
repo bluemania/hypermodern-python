@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "hypermodern-python-test"
-version = "0.1.0"
+version = "0.1.2"
 authors = ["bluemania <damnthatswack@hotmail.com>"]
 description = "The hypermodern Python project"
 license = "MIT"
@@ -15,6 +15,7 @@ click = "^7.1.2"
 requests = "^2.24.0"
 desert = "^2020.1.6"
 marshmallow = "^3.7.1"
+importlib_metadata = "^1.7.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.0.1"
