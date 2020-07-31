@@ -5,6 +5,6 @@ ignore = E203,E501,W503
 per-file-ignores = tests/*:S101
 
 max-line-length = 88
-application-import-names = hypermodern_python,tests
+application-import-names = hypermodern_python_test,tests
 import-order-style = google
 docstring-convention = google

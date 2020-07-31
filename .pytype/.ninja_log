@@ -29,3 +29,14 @@
 678	1712	1596149565469138183	/Users/jenkinsnicholas/Documents/hypermodern-python/.pytype/pyi/tests/test_wikipedia.pyi	3658ba2e5744f74b
 1712	2888	1596149566622494873	/Users/jenkinsnicholas/Documents/hypermodern-python/.pytype/pyi/hypermodern_python/console.pyi	56eedd5d73ffe559
 2889	5828	1596149569475431770	/Users/jenkinsnicholas/Documents/hypermodern-python/.pytype/pyi/tests/test_console.pyi	7253cac69ae563e0
+1	642	1596223137919890457	/Users/jenkinsnicholas/Documents/hypermodern-python/.pytype/pyi/hypermodern_python_test/__init__.pyi	207701dd29b98314
+642	1321	1596223138574845988	/Users/jenkinsnicholas/Documents/hypermodern-python/.pytype/pyi/tests/conftest.pyi	20e806cf0167b5a3
+1321	5303	1596223142452705205	/Users/jenkinsnicholas/Documents/hypermodern-python/.pytype/pyi/hypermodern_python_test/wikipedia.pyi	5119b4208eaf631f
+5303	7023	1596223144223511684	/Users/jenkinsnicholas/Documents/hypermodern-python/.pytype/pyi/hypermodern_python_test/console.pyi	d758b22188476676
+7023	10464	1596223147601215948	/Users/jenkinsnicholas/Documents/hypermodern-python/.pytype/pyi/tests/test_console.pyi	7253cac69ae563e0
+10465	11149	1596223148421228765	/Users/jenkinsnicholas/Documents/hypermodern-python/.pytype/pyi/tests/__init__.pyi	a3c43d22b960a96f
+11149	11813	1596223149085818168	/Users/jenkinsnicholas/Documents/hypermodern-python/.pytype/pyi/conf.pyi	9945d36aa1772cb
+11813	13515	1596223150592569246	/Users/jenkinsnicholas/Documents/hypermodern-python/.pytype/pyi/noxfile.pyi	fbc9b7838c656c69
+13515	14876	1596223152103045976	/Users/jenkinsnicholas/Documents/hypermodern-python/.pytype/pyi/tests/test_wikipedia.pyi	3658ba2e5744f74b
+0	1625	1596223233123443824	/Users/jenkinsnicholas/Documents/hypermodern-python/.pytype/pyi/noxfile.pyi	fbc9b7838c656c69
+0	2782	1596223398520619582	/Users/jenkinsnicholas/Documents/hypermodern-python/.pytype/pyi/tests/test_console.pyi	7253cac69ae563e0

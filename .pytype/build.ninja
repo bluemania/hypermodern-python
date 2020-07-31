@@ -4,27 +4,30 @@ rule infer
 rule check
   command = /Users/jenkinsnicholas/Documents/hypermodern-python/.nox/pytype/bin/python -m pytype.single --disable import-error --imports_info $imports --module-name $module -V 3.7 -o $out --analyze-annotated --nofail --quick $in
   description = check $module
-build /Users/jenkinsnicholas/Documents/hypermodern-python/.pytype/pyi/tests/conftest.pyi: check /Users/jenkinsnicholas/Documents/hypermodern-python/tests/conftest.py
-  imports = /Users/jenkinsnicholas/Documents/hypermodern-python/.pytype/imports/tests.conftest.imports
-  module = tests.conftest
-build /Users/jenkinsnicholas/Documents/hypermodern-python/.pytype/pyi/hypermodern_python/wikipedia.pyi: check /Users/jenkinsnicholas/Documents/hypermodern-python/src/hypermodern_python/wikipedia.py
-  imports = /Users/jenkinsnicholas/Documents/hypermodern-python/.pytype/imports/hypermodern_python.wikipedia.imports
-  module = hypermodern_python.wikipedia
-build /Users/jenkinsnicholas/Documents/hypermodern-python/.pytype/pyi/tests/test_wikipedia.pyi: check /Users/jenkinsnicholas/Documents/hypermodern-python/tests/test_wikipedia.py | /Users/jenkinsnicholas/Documents/hypermodern-python/.pytype/pyi/hypermodern_python/wikipedia.pyi
-  imports = /Users/jenkinsnicholas/Documents/hypermodern-python/.pytype/imports/tests.test_wikipedia.imports
-  module = tests.test_wikipedia
-build /Users/jenkinsnicholas/Documents/hypermodern-python/.pytype/pyi/hypermodern_python/__init__.pyi: check /Users/jenkinsnicholas/Documents/hypermodern-python/src/hypermodern_python/__init__.py
-  imports = /Users/jenkinsnicholas/Documents/hypermodern-python/.pytype/imports/hypermodern_python.__init__.imports
-  module = hypermodern_python.__init__
-build /Users/jenkinsnicholas/Documents/hypermodern-python/.pytype/pyi/hypermodern_python/console.pyi: check /Users/jenkinsnicholas/Documents/hypermodern-python/src/hypermodern_python/console.py | /Users/jenkinsnicholas/Documents/hypermodern-python/.pytype/pyi/hypermodern_python/__init__.pyi /Users/jenkinsnicholas/Documents/hypermodern-python/.pytype/pyi/hypermodern_python/wikipedia.pyi
-  imports = /Users/jenkinsnicholas/Documents/hypermodern-python/.pytype/imports/hypermodern_python.console.imports
-  module = hypermodern_python.console
-build /Users/jenkinsnicholas/Documents/hypermodern-python/.pytype/pyi/tests/test_console.pyi: check /Users/jenkinsnicholas/Documents/hypermodern-python/tests/test_console.py | /Users/jenkinsnicholas/Documents/hypermodern-python/.pytype/pyi/hypermodern_python/console.pyi
+build /Users/jenkinsnicholas/Documents/hypermodern-python/.pytype/pyi/hypermodern_python_test/__init__.pyi: check /Users/jenkinsnicholas/Documents/hypermodern-python/src/hypermodern_python_test/__init__.py
+  imports = /Users/jenkinsnicholas/Documents/hypermodern-python/.pytype/imports/hypermodern_python_test.__init__.imports
+  module = hypermodern_python_test.__init__
+build /Users/jenkinsnicholas/Documents/hypermodern-python/.pytype/pyi/hypermodern_python_test/wikipedia.pyi: check /Users/jenkinsnicholas/Documents/hypermodern-python/src/hypermodern_python_test/wikipedia.py
+  imports = /Users/jenkinsnicholas/Documents/hypermodern-python/.pytype/imports/hypermodern_python_test.wikipedia.imports
+  module = hypermodern_python_test.wikipedia
+build /Users/jenkinsnicholas/Documents/hypermodern-python/.pytype/pyi/hypermodern_python_test/console.pyi: check /Users/jenkinsnicholas/Documents/hypermodern-python/src/hypermodern_python_test/console.py | /Users/jenkinsnicholas/Documents/hypermodern-python/.pytype/pyi/hypermodern_python_test/__init__.pyi /Users/jenkinsnicholas/Documents/hypermodern-python/.pytype/pyi/hypermodern_python_test/wikipedia.pyi
+  imports = /Users/jenkinsnicholas/Documents/hypermodern-python/.pytype/imports/hypermodern_python_test.console.imports
+  module = hypermodern_python_test.console
+build /Users/jenkinsnicholas/Documents/hypermodern-python/.pytype/pyi/tests/test_console.pyi: check /Users/jenkinsnicholas/Documents/hypermodern-python/tests/test_console.py | /Users/jenkinsnicholas/Documents/hypermodern-python/.pytype/pyi/hypermodern_python_test/console.pyi
   imports = /Users/jenkinsnicholas/Documents/hypermodern-python/.pytype/imports/tests.test_console.imports
   module = tests.test_console
 build /Users/jenkinsnicholas/Documents/hypermodern-python/.pytype/pyi/tests/__init__.pyi: check /Users/jenkinsnicholas/Documents/hypermodern-python/tests/__init__.py
   imports = /Users/jenkinsnicholas/Documents/hypermodern-python/.pytype/imports/tests.__init__.imports
   module = tests.__init__
+build /Users/jenkinsnicholas/Documents/hypermodern-python/.pytype/pyi/tests/test_wikipedia.pyi: check /Users/jenkinsnicholas/Documents/hypermodern-python/tests/test_wikipedia.py | /Users/jenkinsnicholas/Documents/hypermodern-python/.pytype/pyi/hypermodern_python_test/wikipedia.pyi
+  imports = /Users/jenkinsnicholas/Documents/hypermodern-python/.pytype/imports/tests.test_wikipedia.imports
+  module = tests.test_wikipedia
+build /Users/jenkinsnicholas/Documents/hypermodern-python/.pytype/pyi/conf.pyi: check /Users/jenkinsnicholas/Documents/hypermodern-python/docs/conf.py
+  imports = /Users/jenkinsnicholas/Documents/hypermodern-python/.pytype/imports/conf.imports
+  module = conf
 build /Users/jenkinsnicholas/Documents/hypermodern-python/.pytype/pyi/noxfile.pyi: check /Users/jenkinsnicholas/Documents/hypermodern-python/noxfile.py
   imports = /Users/jenkinsnicholas/Documents/hypermodern-python/.pytype/imports/noxfile.imports
   module = noxfile
+build /Users/jenkinsnicholas/Documents/hypermodern-python/.pytype/pyi/tests/conftest.pyi: check /Users/jenkinsnicholas/Documents/hypermodern-python/tests/conftest.py
+  imports = /Users/jenkinsnicholas/Documents/hypermodern-python/.pytype/imports/tests.conftest.imports
+  module = tests.conftest

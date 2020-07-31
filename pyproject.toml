@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "hypermodern-python"
+name = "hypermodern-python-test"
 version = "0.1.0"
 authors = ["bluemania <damnthatswack@hotmail.com>"]
 description = "The hypermodern Python project"
@@ -40,14 +40,14 @@ sphinx = "^3.1.2"
 sphinx-autodoc-typehints = "^1.11.0"
 
 [tool.poetry.scripts]
-hypermodern-python = "hypermodern_python.console:main"
+hypermodern-python-test = "hypermodern_python_test.console:main"
 
 [tool.coverage.paths]
 source = ["src", "*/site-packages"]
 
 [tool.coverage.run]
 branch = true
-source = ["hypermodern_python"]
+source = ["hypermodern_python_test"]
 
 [tool.coverage.report]
 show_missing = true
